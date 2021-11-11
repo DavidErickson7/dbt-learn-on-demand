@@ -1,5 +1,4 @@
 select
 orderid as order_id,
-amount
+amount / 100 as amount
 from sandbox_david.stripe_payments_csv
-where status = 'success'
