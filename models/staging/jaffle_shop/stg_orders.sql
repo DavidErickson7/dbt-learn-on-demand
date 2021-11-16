@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from sandbox_david.jaffle_shop_orders_csv
+from {{source('sandbox_david','jaffle_shop_orders_csv')}}

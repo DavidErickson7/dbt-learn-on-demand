@@ -3,4 +3,4 @@ select
     first_name,
     last_name
 
-from sandbox_david.jaffle_shop_customers_csv
+from {{source('sandbox_david','jaffle_shop_customers_csv')}}
