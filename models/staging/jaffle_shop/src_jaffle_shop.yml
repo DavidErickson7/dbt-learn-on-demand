@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: sandbox_david
+    description: A replica of a Postgres Database
+    database: social_media_analytics
+    tables:
+      - name: jaffle_shop_customers_csv
+        description: Raw customers data
+        columns:
+          - name: id
+            description: Primary key for customers
+      - name: jaffle_shop_orders_csv
+      - name: stripe_payments_csv
